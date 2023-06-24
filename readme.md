@@ -1,1 +1,1 @@
-# my personal dot-filse (dont use this, not really design. )
+# my personal dot-filse (dont use this, not really designed for that. )
