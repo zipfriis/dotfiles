@@ -5,71 +5,80 @@
         "type": "kitty",
         "height": 12,
         "padding": {
-            "top": 1
+            "top": 1,
+            "left":2
         }
-    },
+  },
   "display": {
-        "separator": " \t  "
-    },
+    "separator": "\t",
+      "key": {
+        "width": 12,       // Aligns keys to this width
+        "type": "string"   // string, icon, both, or none
+    }
+  },
   "modules": [
     "break",
     {
-        "type": "os",
-        "key": "OS   ",
+        "type": "custom",
+        "format": "Linux x86_64",
+        "key": "OS─╮",
         "keyColor": "36",  // = color1
     },
     {
         "type": "kernel",
-        "key": " ├  ",
+        "key": "   ├─  ",
         "keyColor": "36",
     },
     {
         "type": "packages",
         "format": "{} (pacman)",
-        "key": " ├ 󰏖 ",
+        "key": "   ├─ 󰏖 ",
         "keyColor": "36",  
     },
     {
         "type": "shell",
-        "key": " ├  ",
+        "key": "   ├─  ",
         "keyColor": "34", 
     },
     {
         "type": "wm",
-        "key": " ├ 󰉼 ",
+        "key": "   ├─ 󰉼 ",
+        "format": "{1}",
         "keyColor": "34",
     },
     {
-            "type": "terminal",
-            "key": " ├  ",
-            "keyColor": "34",
+        "type": "terminal",
+        "key": "   ├─  ",
+        "keyColor": "34",
     },
     {
-            "type": "cpu",
-            "format": "{1} ({3})",
-            "key": " ├  ",
+            "type": "custom",
+            "format": "i7-7700",
+            "key": "   ├─  ",
             "keyColor": "35",
     },
     {
-            "type": "gpu",
-            "format": "{1} {2}",            
-            "key": " ├ 󰢮 ",
+            "type": "custom",
+            "format": "RX 6900 XT",            
+            "key": "   ├─ 󰢮 ",
             "keyColor": "35",
     },
     {
             "type": "memory",
-            "key": " ├  ",
+            "key": "   ├─  ",
+            "format": "{1} {3}",
             "keyColor": "35",
     },
     {
             "type": "disk",
-            "key": " ├ 󰋊 ",
+            "format": "{1} {3}",
+            "key": "   ╰─ 󰋊 ",
             "keyColor": "35",
     },
     "break",
     {
             "type": "custom",
-            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
+            "format": "\u001b[90m⎳⎲⎳⎲\u001b[31m⎳⎲⎳⎲\u001b[32m⎳⎲⎳⎲\u001b[33m⎳⎲⎳⎲\u001b[34m⎳⎲⎳⎲\u001b[35m⎳⎲⎳⎲\u001b[36m⎳⎲⎳⎲\u001b[37m⎳⎲⎳⎲"
     },
   ]
 }
